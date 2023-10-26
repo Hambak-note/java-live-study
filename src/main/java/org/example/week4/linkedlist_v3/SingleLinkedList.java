@@ -78,7 +78,7 @@ public class SingleLinkedList<T> {
     }
 
     //특정 노드의 다음 위치에 노드를 추가한다.
-    private void addAfter(Node<T> before, T item) {
+    protected void addAfter(Node<T> before, T item) {
 
         Node<T> temp = new Node<T>(item);
         temp.next = before.next;
