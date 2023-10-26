@@ -68,7 +68,7 @@ public class SingleLinkedList<T> {
     //때문에 이러한 메소드 또한 private으로 선언한다.
 
     //연결 리스트의 가장 앞에 Node를 추가한다.
-    private void addFirst(T item) {
+    protected void addFirst(T item) {
 
         Node<T> newNode = new Node<T>(item);
 
@@ -86,7 +86,7 @@ public class SingleLinkedList<T> {
         size++;
     }
 
-    private T removeFirst() {
+    protected T removeFirst() {
 
         if(head == null)
             return null;
